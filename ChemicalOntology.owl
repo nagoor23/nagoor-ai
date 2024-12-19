@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasCoefficient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasCoefficient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Molecule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Coefficient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasProduct">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#ChemicalEquation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasReactant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasReactant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#ChemicalEquation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Reactant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasAtomicNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasAtomicNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasCoefficientValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasCoefficientValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Coefficient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#BalancedEquation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#BalancedEquation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#ChemicalEquation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#ChemicalEquation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#ChemicalEquation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Coefficient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Coefficient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Compound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Compound"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Hydrogen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Hydrogen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Reactant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Molecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Molecule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#NonMetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#NonMetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Oxygen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Oxygen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Reactant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Reactant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Reactant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#UnbalancedEquation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#UnbalancedEquation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#ChemicalEquation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Carbon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Carbon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Hydrogen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Hydrogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Oxygen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Oxygen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Element"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Hydrogen">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-3#Oxygen">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
